@@ -37,10 +37,12 @@ func substract(firstValue float64, secondValue float64) float64 {
 	return firstValue - secondValue
 }
 
-func multiply(firstValue float64, secondValue float64) float64 {
+// If both values are float64, we can omit the type on the first parameters
+func multiply(firstValue, secondValue float64) float64 {
 	return firstValue * secondValue
 }
 
-func divide(firstValue float64, secondValue float64) float64 {
+// If both values are float64, we can omit the type on the first parameters
+func divide(firstValue, secondValue float64) float64 {
 	return firstValue / secondValue
 }
