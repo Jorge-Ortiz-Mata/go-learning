@@ -10,7 +10,7 @@ import (
 const balanceFilename string = "database.txt"
 
 func saveBalanceToFile(balance float64) {
-	var stringBalance = fmt.Sprint(balance)
+	var stringBalance = fmt.Sprint(balance) // converts balance to string
 	os.WriteFile(balanceFilename, []byte(stringBalance), 0644)
 }
 
